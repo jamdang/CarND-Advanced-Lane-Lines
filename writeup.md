@@ -19,7 +19,7 @@ The goals / steps of this project are the following:
 
 [image1]: ./examples/undistort_xz.png "Undistorted"
 [image2]: ./examples/distort_correct_xz.png "distort correction"
-[image3]: ./examples/binary_combo_example.jpg "Binary Example"
+[image3]: ./examples/edge_detection_xz.png "Binary Example"
 [image4]: ./examples/warped_straight_lines.jpg "Warp Example"
 [image5]: ./examples/color_fit_lines.jpg "Fit Visual"
 [image6]: ./examples/example_output.jpg "Output"
@@ -52,8 +52,7 @@ I then used the output `objPoints` and `imgPoints` to compute the camera calibra
 By applying the `cal_undistort()` function in cell 3 with the obtained camera calibration/distortion coefficients ('mtx', 'dist'), I get the distortion-corrected image of one of the test images:
 ![alt text][image2]
 ####2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
-I used a combination of color and gradient thresholds to generate a binary image (thresholding steps at lines # through # in `another_file.py`).  Here's an example of my output for this step.  (note: this is not actually from one of the test images)
-
+I used a combination of color and gradient thresholds to generate a binary image for edge detection. `abs_sobel_thresh()` function in cell 6 implements the directional gradient; `mag_thresh()` in cell 7 implements the gradient magnitude;  `dir_threshold()` in cell 8 implements the gradient direction; `hls_select()` in cell 9 implements the color space and s channel selection.  Here's an example of my output for this step. 
 ![alt text][image3]
 
 ####3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
