@@ -21,7 +21,7 @@ The goals / steps of this project are the following:
 [image2]: ./examples/distort_correct_xz.png "distort correction"
 [image3]: ./examples/edge_detection_xz.png "Binary Example"
 [image4]: ./examples/perspective_trans_xz.png "Warp Example"
-[image5]: ./examples/color_fit_lines.jpg "Fit Visual"
+[image5]: ./examples/lane_find_fit_xz.png "Fit Visual"
 [image6]: ./examples/example_output.jpg "Output"
 [video1]: ./project_video.mp4 "Video"
 
@@ -87,7 +87,12 @@ I verified that my perspective transform was working as expected by drawing the 
 
 ####4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
-Then I did some other stuff and fit my lane lines with a 2nd order polynomial kinda like this:
+After I obtain the warped, masked edge binary image, I then implement the `laneFind_BoxMethod()` in cell 17 to find the lane line pixels and then fit the lane lines with a 2nd order polynomial. 
+The function employes the sliding window method and basically works in the following steps:
+1) identify, in the warped binary image, the starting points for left and right lane lines by finding the respective peak of pixels in the left and right bottom half  
+2) "slide" a window, one for the left and one for the right lane line, from the starting point at the bottom, all the way to the top of the image, finding all pixels in the window (box), while adjusting the window's horizontal location based on the pixel distribution
+3) fit a 2nd order polynomial using `np.polyfit()` function
+
 
 ![alt text][image5]
 
