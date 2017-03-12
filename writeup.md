@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/undistort_xz.png "Undistorted"
-[image2]: ./examples/distort_correct_xz.jpg "distort correction"
+[image2]: ./examples/distort_correct_xz.png "distort correction"
 [image3]: ./examples/binary_combo_example.jpg "Binary Example"
 [image4]: ./examples/warped_straight_lines.jpg "Warp Example"
 [image5]: ./examples/color_fit_lines.jpg "Fit Visual"
