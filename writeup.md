@@ -22,7 +22,7 @@ The goals / steps of this project are the following:
 [image3]: ./examples/edge_detection_xz.png "Binary Example"
 [image4]: ./examples/perspective_trans_xz.png "Warp Example"
 [image5]: ./examples/lane_find_fit_xz.png "Fit Visual"
-[image6]: ./examples/example_output.jpg "Output"
+[image6]: ./examples/sample_xz.png "Output"
 [video1]: ./project_video.mp4 "Video"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
@@ -105,7 +105,7 @@ I implemented `curveRad()` function in cell 20 for radius calculation.
 
 ####6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
-I implemented this step in lines # through # in my code in `yet_another_file.py` in the function `map_lane()`.  Here is an example of my result on a test image:
+I implemented this step in `LaneFinding_Pipeline()` in code cell 29.  Here is an example of my result on a test image:
 
 ![alt text][image6]
 
