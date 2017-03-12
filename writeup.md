@@ -89,8 +89,11 @@ I verified that my perspective transform was working as expected by drawing the 
 
 After I obtain the warped, masked edge binary image, I then implement the `laneFind_BoxMethod()` in cell 17 to find the lane line pixels and then fit the lane lines with a 2nd order polynomial. 
 The function employes the sliding window method and basically works in the following steps:
+
 1) identify, in the warped binary image, the starting points for left and right lane lines by finding the respective peak of pixels in the left and right bottom half  
+
 2) "slide" a window, one for the left and one for the right lane line, from the starting point at the bottom, all the way to the top of the image, finding all pixels in the window (box), while adjusting the window's horizontal location based on the pixel distribution
+
 3) fit a 2nd order polynomial using `np.polyfit()` function
 
 
