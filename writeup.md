@@ -23,7 +23,7 @@ The goals / steps of this project are the following:
 [image4]: ./examples/perspective_trans_xz.png "Warp Example"
 [image5]: ./examples/lane_find_fit_xz.png "Fit Visual"
 [image6]: ./examples/sample_xz.png "Output"
-[video1]: ./project_video.mp4 "Video"
+[video1]: ./examples/project_video_output.mp4 "Video"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 ###Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
@@ -115,7 +115,7 @@ I implemented this step in `LaneFinding_Pipeline()` in code cell 29.  Here is an
 
 ####1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-Here's a [link to my video result](./project_video.mp4)
+Here's a [link to my video result](./examples/project_video_output.mp4)
 
 ---
 
